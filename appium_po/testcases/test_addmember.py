@@ -21,7 +21,7 @@ class TestAddMember:
 
     @pytest.mark.parametrize("name,gender,phonenum", get_data())
     def test_addmember(self,name,gender,phonenum):
-        toast = self.main.click_contact().click_addmenber("添加成员").click_addmember_manual().edit_name().\
+        toast = self.main.click_contact().click_addmenber().click_addmember_manual().edit_name().\
             edit_gender().edit_phonenum().click_saves().get_toast()
         assert toast == "添加成功"
 

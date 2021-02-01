@@ -6,7 +6,7 @@ from appium_po.page.main_page import MainPage
 
 class App(BasePage):
     def start(self):
-        if self.driver == None:
+        if self.driver is None:
             desired_caps = {}
             desired_caps['platformName'] = 'Android'
             desired_caps['platformVersion'] = '7.1.2'
@@ -30,5 +30,5 @@ class App(BasePage):
     def stop(self):
         self.driver.quit()
 
-    def goto_main(self):
+    def goto_main(self) -> MainPage:
         return MainPage(self.driver)
