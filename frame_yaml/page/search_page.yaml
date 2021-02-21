@@ -1,0 +1,7 @@
+search:
+  - action: send
+    locator: [xpath, '//*[@resource-id="com.xueqiu.android:id/search_input_text"]']
+    text: "华为"
+
+  - action: find_and_click
+    locator: [xpath, '//*[@text="华为汽车"]']
