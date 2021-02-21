@@ -1,7 +1,7 @@
 from appium import webdriver
 
-from frame.baseconfig.base_page import BasePage
-from frame.page.main_page import MainPage
+from frame_yaml.config.base_page import BasePage
+from frame_yaml.page.main_page import MainPage
 
 
 class App(BasePage):
